@@ -23,6 +23,43 @@ nav {
   align-items: center;
   justify-content: space-evenly; }
 
+.menu {
+  width: 20%;
+  height: 50px; }
+  .menu .menu-bars {
+    position: relative;
+    z-index: 3;
+    display: none;
+    width: 50px;
+    height: 50px;
+    background-image: url(../images/menu.svg);
+    background-repeat: no-repeat;
+    background-size: cover; }
+  .menu .menu-cross {
+    position: relative;
+    z-index: 3;
+    display: none;
+    width: 50px;
+    height: 50px;
+    background-image: url(../images/x.svg);
+    background-repeat: no-repeat;
+    background-size: cover; }
+  .menu .menu-dropdown {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: #242424d0;
+    padding-top: 20%; }
+    .menu .menu-dropdown a {
+      text-decoration: none;
+      text-align: center;
+      color: white; }
+
 nav a {
   text-decoration: none;
   color: white; }
@@ -35,9 +72,8 @@ nav a {
   font-size: 1em; }
 
 @media only screen and (max-width: 768px) {
-  .fas {
-    display: block;
-    margin-right: 5%; }
+  .menu-bars {
+    display: block !important; }
   .link-nav {
     display: none; } }
 
@@ -63,6 +99,7 @@ nav a {
 
 @media only screen and (max-width: 768px) {
   .home-para {
+    margin-left: 250px;
     align-items: center;
     max-width: 250px;
     font-size: 8px; } }
@@ -212,7 +249,10 @@ footer {
 @media only screen and (max-width: 768px) {
   footer {
     text-align: center;
-    margin-left: 0px; } }
+    margin-left: 0px; }
+    footer .social {
+      display: flex;
+      margin-left: 325px; } }
 
 @media only screen and (max-width: 400px) {
   footer {
