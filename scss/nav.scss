@@ -1,0 +1,29 @@
+nav {
+  height: 50px;
+  background-color: #ff6961;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+}
+
+.fas {
+  display: none;
+  right: 25px;
+  position: fixed;
+  color: #000;
+  font-size: 1em;
+}
+@media only screen and (max-width: 768px) {
+  .fas {
+    display: block;
+    margin-right: 5%;
+  }
+  .link-nav {
+    display: none;
+  }
+}
