@@ -1,0 +1,57 @@
+.about {
+  .about-owner {
+    font-size: 30px;
+    color: #edacab;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 40px;
+  }
+
+  .about-body {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .owner-image {
+    background-image: url(../images/person.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+    border-radius: 200px;
+    margin-left: 200px;
+    margin-bottom: 50px;
+  }
+
+  .owner-para {
+    background-color: #ffcac7;
+    width: 600px;
+    height: 150px;
+    text-align: center;
+    border: #ffb2ae solid 3px;
+    padding: 20px;
+    margin-top: 50px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .about {
+    .owner-image {
+      width: 150px;
+      height: 150px;
+      border-radius: 100px;
+      margin-left: 5px;
+      margin-bottom: 25px;
+      margin-top: 25px;
+    }
+
+    .owner-para {
+      margin-right: 25px;
+      width: 150px;
+      height: 250px;
+      font-size: 8px;
+    }
+  }
+}
